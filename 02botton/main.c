@@ -16,7 +16,7 @@ void btn_handler(void *arg)
 int main(void)
 {
   // Инициализация пина PA0, к которому подключена кнопка, как источника прерывания.
-  // GPIO_RISING - прерывание срабатывает по фронту
+  // GPIO_RISING - прерывание срабатывает по  фронту
   // btn_handler - имя функции обработчика прерывания
   // NULL - ничего не передаем в аргументах
   gpio_init_int(GPIO_PIN(PORT_A, 0), GPIO_IN, GPIO_RISING, btn_handler, NULL);
